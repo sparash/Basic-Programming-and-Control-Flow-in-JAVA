@@ -3,16 +3,16 @@ class prime
     public static void main(String[] args)
     {
         int num = Integer.parseInt(args[0]);
-        flag=false;
+        count=false;
         for(int i=2;i<=num/2;++i)
         {
             if(num%i==0)
             {
-                flag=true;
+                count=true;
                 break;
             }
         }
-        if(flag!=true)
+        if(count!=true)
         {
             System.out.println("It is a prime number");
         }
